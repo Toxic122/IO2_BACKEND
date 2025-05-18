@@ -27,8 +27,8 @@ namespace ISP2.Controllers
             return Ok(new
             {
                 success = true,
-                role = user.Rola,
-                name = user.Imie
+                role = user.Role,
+                name = user.Name
             });
         }
     }
