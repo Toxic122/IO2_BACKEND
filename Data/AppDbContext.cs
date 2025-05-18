@@ -10,11 +10,14 @@ namespace ISP2.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().ToTable("Klient"); // lub Pracownik, lub oba jeśli rozdzielisz
+            modelBuilder.Entity<Client>().ToTable("Klient"); // lub Pracownik, lub oba jeśli rozdzielisz
+            modelBuilder.Entity<Employee>().ToTable("Pracownik");
+
         }
     }
 }
