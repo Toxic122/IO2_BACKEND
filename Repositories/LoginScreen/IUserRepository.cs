@@ -1,6 +1,6 @@
-﻿using ISP2.Models;
+﻿using ISP2.Models.LoginScreen;
 
-namespace ISP2.Repositories
+namespace ISP2.Repositories.LoginScreen
 {
     public interface IUserRepository
     {

@@ -4465,11 +4465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\PROJEKT IO IO 2\\ISP2\\ISP2\\ISP2.csproj",
+      "projectUniqueName": "F:\\PROJEKTY OFFICIAL GIT\\PROJEKT IO IO 2\\ISP2\\ISP2\\ISP2.csproj",
       "projectName": "ISP2",
-      "projectPath": "F:\\PROJEKT IO IO 2\\ISP2\\ISP2\\ISP2.csproj",
+      "projectPath": "F:\\PROJEKTY OFFICIAL GIT\\PROJEKT IO IO 2\\ISP2\\ISP2\\ISP2.csproj",
       "packagesPath": "C:\\Users\\Toxic\\.nuget\\packages\\",
-      "outputPath": "F:\\PROJEKT IO IO 2\\ISP2\\ISP2\\obj\\",
+      "outputPath": "F:\\PROJEKTY OFFICIAL GIT\\PROJEKT IO IO 2\\ISP2\\ISP2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

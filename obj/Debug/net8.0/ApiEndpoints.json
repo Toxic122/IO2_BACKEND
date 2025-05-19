@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "ISP2.Controllers.LoginController",
+    "ContainingType": "ISP2.Controllers.LoginScreen.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login",
     "HttpMethod": "POST",
@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ISP2.Models.LoginRequest",
+        "Type": "ISP2.Models.LoginScreen.LoginRequest",
         "IsRequired": true
       }
     ],

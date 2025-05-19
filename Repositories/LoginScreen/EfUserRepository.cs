@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ISP2.Models;
 using ISP2.Data;
+using ISP2.Models.LoginScreen;
 
-namespace ISP2.Repositories
+namespace ISP2.Repositories.LoginScreen
 {
     public class EfUserRepository : IUserRepository
     {

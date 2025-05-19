@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using ISP2.Models;
-using ISP2.Services;
+using ISP2.Services.LoginScreen;
 
-namespace ISP2.Controllers
+namespace ISP2.Controllers.LoginScreen
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -17,7 +16,7 @@ namespace ISP2.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login([FromBody] ISP2.Models.LoginRequest request)
+        public async Task<IActionResult> Login([FromBody] Models.LoginScreen.LoginRequest request)
         {
             var user = await _loginService.LoginAsync(request.Login, request.Password);
 

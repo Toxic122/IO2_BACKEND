@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ISP2.Models
+namespace ISP2.Models.LoginScreen
 {
     [Table("Klient")]
     public class Client

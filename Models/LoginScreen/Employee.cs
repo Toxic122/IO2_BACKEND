@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ISP2.Models
+namespace ISP2.Models.LoginScreen
 {
     [Table("Pracownik")]
     public class Employee
     {
         [Key]
         [Column("idPracownik")]
-        public int Id { get; set; }
+        public int idPracownik { get; set; }
 
         [Column("login")]
         public string Login { get; set; }

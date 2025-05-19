@@ -1,7 +1,6 @@
-﻿using ISP2.Models;
-using ISP2.Repositories;
-using ISP2.Services;
-namespace ISP2.Services
+﻿using ISP2.Models.LoginScreen;
+using ISP2.Repositories.LoginScreen;
+namespace ISP2.Services.LoginScreen
 {
     public class LoginService : ILoginService
     {

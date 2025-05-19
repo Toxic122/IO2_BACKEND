@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gXQtvuFJLCc=",
+  "dgSpecHash": "+OK579DSIsQ=",
   "success": true,
-  "projectFilePath": "F:\\PROJEKT IO IO 2\\ISP2\\ISP2\\ISP2.csproj",
+  "projectFilePath": "F:\\PROJEKTY OFFICIAL GIT\\PROJEKT IO IO 2\\ISP2\\ISP2\\ISP2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Toxic\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Toxic\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
