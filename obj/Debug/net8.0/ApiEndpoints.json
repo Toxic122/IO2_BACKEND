@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ConsultantController",
+    "Method": "SearchClients",
+    "RelativePath": "api/Consultant/search-clients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ISP2.Controllers.LoginScreen.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login",

@@ -15,7 +15,7 @@ namespace ISP2.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Client>().ToTable("Klient"); // lub Pracownik, lub oba jeśli rozdzielisz
+            modelBuilder.Entity<Client>().ToTable("Klient");
             modelBuilder.Entity<Employee>().ToTable("Pracownik");
 
         }

@@ -5,6 +5,27 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Consultant/search-clients": {
+      "get": {
+        "tags": [
+          "Consultant"
+        ],
+        "parameters": [
+          {
+            "name": "FullName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Login": {
       "post": {
         "tags": [
