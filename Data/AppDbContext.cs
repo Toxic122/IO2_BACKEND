@@ -1,4 +1,4 @@
-﻿using ISP2.Models;
+﻿using ISP2.Models.LoginScreen;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;

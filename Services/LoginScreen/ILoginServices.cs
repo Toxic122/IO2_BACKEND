@@ -1,6 +1,6 @@
-﻿using ISP2.Models;
+﻿using ISP2.Models.LoginScreen;
 
-namespace ISP2.Services
+namespace ISP2.Services.LoginScreen
 {
     public interface ILoginService
     {

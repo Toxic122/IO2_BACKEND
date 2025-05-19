@@ -1,4 +1,4 @@
-﻿namespace ISP2.Models
+﻿namespace ISP2.Models.LoginScreen
 {
     public class LoginRequest
     {

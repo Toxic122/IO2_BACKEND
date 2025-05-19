@@ -1,7 +1,7 @@
-using ISP2.Services;
 using Microsoft.EntityFrameworkCore;
 using ISP2.Data;
-using ISP2.Repositories;
+using ISP2.Repositories.LoginScreen;
+using ISP2.Services.LoginScreen;
 
 var builder = WebApplication.CreateBuilder(args);
 
