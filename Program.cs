@@ -3,6 +3,7 @@ using ISP2.Data;
 using ISP2.Repositories.LoginScreen;
 using ISP2.Services.LoginScreen;
 using ISP2.Repositories.ConsultantScreen;
+using ISP2.Repositories.ServiceScreen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IUserRepository, EfUserRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IConsultantRepository, EfConsultantRepository>();
+builder.Services.AddScoped<ITicketRepository, EfTicketRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
