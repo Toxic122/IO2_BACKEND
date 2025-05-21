@@ -16,6 +16,7 @@ namespace ISP2.Repositories.LoginScreen
         public async Task<User?> AuthenticateAsync(string login, string password)
         {
             var client = await _context.Clients
+                .Include(c => c.Rola)
                 .FirstOrDefaultAsync(c => c.Login == login && c.Pass == password);
 
             if (client != null)
@@ -24,11 +25,12 @@ namespace ISP2.Repositories.LoginScreen
                 {
                     Name = client.Imie,
                     Login = client.Login,
-                    Role = client.Rola
+                    Rola = client.Rola?.Rola ?? "BRAK ROLI"
                 };
             }
 
             var employee = await _context.Employees
+                .Include(e => e.Rola)
                 .FirstOrDefaultAsync(e => e.Login == login && e.Pass == password);
 
             if (employee != null)
@@ -37,7 +39,7 @@ namespace ISP2.Repositories.LoginScreen
                 {
                     Name = employee.Imie,
                     Login = employee.Login,
-                    Role = employee.Rola
+                    Rola = employee.Rola?.Rola ?? "BRAK ROLI"
                 };
             }
 

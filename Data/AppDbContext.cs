@@ -15,6 +15,7 @@ namespace ISP2.Data
         public DbSet<Client> Clients { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<UserRole> UserRole{ get; set; }
         public DbSet<TicketType> TicketTypes { get; set; }
         public DbSet<TicketStatus> TicketStatuses { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -22,6 +23,23 @@ namespace ISP2.Data
             modelBuilder.Entity<Client>().ToTable("Klient");
             modelBuilder.Entity<Employee>().ToTable("Pracownik");
             modelBuilder.Entity<Ticket>().ToTable("Zgloszenie");
+
+
+            //Client -> Rola
+            modelBuilder.Entity<Client>()
+                .HasOne(t => t.Rola)
+                .WithMany(tt => tt.Klienci)
+                .HasForeignKey(t => t.IdRola)
+                .IsRequired(false);
+
+            //Employee -> Rola
+            modelBuilder.Entity<Employee>()
+                .HasOne(t => t.Rola)
+                .WithMany(tt => tt.Pracownicy)
+                .HasForeignKey(t => t.IdRola)
+                .IsRequired(false);
+
+
 
 
 
@@ -48,8 +66,6 @@ namespace ISP2.Data
                 .HasOne(t => t.EmployeeLogin)
                 .WithMany()
                 .HasForeignKey(t => t.IdPracownik);
-
-
 
 
         }

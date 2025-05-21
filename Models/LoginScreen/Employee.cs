@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ISP2.ModelsDict;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ISP2.Models.LoginScreen
@@ -23,7 +24,9 @@ namespace ISP2.Models.LoginScreen
         public string Nazwisko { get; set; }
 
 
-        [Column("rola")]
-        public string Rola { get; set; }
+        [Column("idrola")]
+        public int? IdRola { get; set; }
+
+        public UserRole? Rola { get; set; }
     }
 }
