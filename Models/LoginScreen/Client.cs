@@ -27,5 +27,17 @@ namespace ISP2.Models.LoginScreen
 
         [Column("Nazwisko")]
         public string Nazwisko { get; set; }
+
+        [Column("Wiek")]
+        public string Wiek { get; set; }
+
+        [Column("Email")]
+        public string Email { get; set; }
+
+        [Column("Telefon")]
+        public string Telefon { get; set; }
+
+        [Column("idUsluga")]
+        public int? idUsluga { get; set; }
     }
 }

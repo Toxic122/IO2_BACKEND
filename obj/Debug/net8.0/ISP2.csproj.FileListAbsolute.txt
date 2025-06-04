@@ -456,12 +456,6 @@ F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\scopedcss\bu
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets.build.json
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets.development.json
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets\msbuild.ISP2.Microsoft.AspNetCore.StaticWebAssets.props
-F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets\msbuild.ISP2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets\msbuild.build.ISP2.props
-F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ISP2.props
-F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ISP2.props
-F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets.pack.json
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\ISP2.csproj.Up2Date
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\ISP2.dll
@@ -469,3 +463,4 @@ F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\refint\ISP2.
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\ISP2.pdb
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\ISP2.genruntimeconfig.cache
 F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\ref\ISP2.dll
+F:\PROJEKTY OFFICIAL GIT\PROJEKT IO IO 2\ISP2\ISP2\obj\Debug\net8.0\staticwebassets.build.json.cache
