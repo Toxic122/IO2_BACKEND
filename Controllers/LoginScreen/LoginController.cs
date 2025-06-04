@@ -22,11 +22,13 @@ namespace ISP2.Controllers.LoginScreen
 
             if (user == null)
                 return Unauthorized(new { success = false, message = "Nieprawidłowy login lub hasło." });
+            if(user.Rola ==null)
+                return Unauthorized(new { success = false, message = "Brak przypisanej roli do użytkownika - skontaktuj się z administratorem" });
 
             return Ok(new
             {
                 success = true,
-                role = user.Role,
+                role = user.Rola,
                 name = user.Name
             });
         }
