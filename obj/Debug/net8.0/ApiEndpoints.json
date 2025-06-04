@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ISP2.Controllers.AdminScreen.RegisterUserController",
+    "Method": "Register",
+    "RelativePath": "api/RegisterUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ISP2.Models.AdminScreen.RegisterUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TicketController",
     "Method": "GetTicketById",
     "RelativePath": "api/Ticket/{id}",

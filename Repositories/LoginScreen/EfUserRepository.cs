@@ -44,6 +44,29 @@ namespace ISP2.Repositories.LoginScreen
             }
 
             return null;
+
+
         }
+
+        public async Task<bool> LoginExistsAsync(string login)
+        {
+            return await _context.Clients.AnyAsync(c => c.Login == login)
+            || await _context.Employees.AnyAsync(e => e.Login == login);
+        }
+
+        public async Task AddClientAsync(Client client)
+        {
+            _context.Clients.Add(client);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task AddEmployeeAsync(Employee employee)
+        {
+            _context.Employees.Add(employee);
+            await _context.SaveChangesAsync();
+        }
+
     }
+
+
 }
