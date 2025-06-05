@@ -39,5 +39,6 @@ namespace ISP2.Models.LoginScreen
 
         [Column("idUsluga")]
         public int? idUsluga { get; set; }
+        public Usluga? Usluga { get; set; }
     }
 }

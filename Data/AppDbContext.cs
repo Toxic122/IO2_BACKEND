@@ -13,9 +13,10 @@ namespace ISP2.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Usluga> Uslugi { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
-        public DbSet<UserRole> UserRole{ get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
         public DbSet<TicketType> TicketTypes { get; set; }
         public DbSet<TicketStatus> TicketStatuses { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,6 +33,14 @@ namespace ISP2.Data
                 .HasForeignKey(t => t.IdRola)
                 .IsRequired(false);
 
+            //Client -> Usluga
+            modelBuilder.Entity<Client>()
+                .HasOne(c => c.Usluga)
+                .WithMany()
+                .HasForeignKey(c => c.idUsluga)
+                .IsRequired(false);
+
+
             //Employee -> Rola
             modelBuilder.Entity<Employee>()
                 .HasOne(t => t.Rola)
@@ -46,7 +55,7 @@ namespace ISP2.Data
             //Ticket -> TypZgloszenia
             modelBuilder.Entity<Ticket>()
                 .HasOne(t => t.TypZgloszenia)
-                .WithMany(tt =>tt.Zgloszenia)
+                .WithMany(tt => tt.Zgloszenia)
                 .HasForeignKey(t => t.IdTypZgloszenia);
 
             //Ticket -> Status
