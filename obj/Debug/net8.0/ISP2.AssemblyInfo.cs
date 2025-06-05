@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ISP2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ecc44c462cf701f435a751e404825358b9fbe3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e751e6afe44671161ae9555a2f5ec97d42121cf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ISP2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ISP2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
