@@ -88,6 +88,28 @@
         }
       }
     },
+    "/api/RegisterUser/delete/{login}": {
+      "delete": {
+        "tags": [
+          "RegisterUser"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Ticket/all": {
       "get": {
         "tags": [
@@ -168,7 +190,8 @@
             "nullable": true
           },
           "wiek": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
           "idUsluga": {

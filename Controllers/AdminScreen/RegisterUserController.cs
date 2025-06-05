@@ -28,5 +28,20 @@ namespace ISP2.Controllers.AdminScreen
                 return BadRequest(new { message = ex.Message });
             }
         }
+        [HttpDelete("delete/{login}")]
+        public async Task<IActionResult> DeleteUser(string login)
+        {
+            var success = await _registerService.DeleteUserByLoginAsync(login);
+            if (!success)
+            {
+                return NotFound(new { message = "Użytkownik o podanym loginie nie istnieje." });
+            }
+
+            return Ok(new { message = "Użytkownik został usunięty." });
+        }
+
+
+
+
     }
 }

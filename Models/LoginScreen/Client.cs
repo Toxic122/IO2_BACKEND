@@ -29,7 +29,7 @@ namespace ISP2.Models.LoginScreen
         public string Nazwisko { get; set; }
 
         [Column("Wiek")]
-        public string Wiek { get; set; }
+        public int? Wiek { get; set; }
 
         [Column("Email")]
         public string Email { get; set; }
