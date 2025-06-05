@@ -48,6 +48,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ISP2.Controllers.AdminScreen.RegisterUserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/RegisterUser/delete/{login}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TicketController",
     "Method": "GetTicketById",
     "RelativePath": "api/Ticket/{id}",

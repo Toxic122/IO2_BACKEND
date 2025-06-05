@@ -9,7 +9,7 @@ namespace ISP2.Models.LoginScreen
     {
         [Key]
         [Column("idPracownik")]
-        public int idPracownik { get; set; }
+        public int IdPracownik { get; set; }
 
         [Column("login")]
         public string Login { get; set; }
@@ -24,7 +24,7 @@ namespace ISP2.Models.LoginScreen
         public string Nazwisko { get; set; }
 
         [Column("wiek")]
-        public string Wiek { get; set; }
+        public int? Wiek { get; set; }
 
         [Column("email")]
         public string Email { get; set; }

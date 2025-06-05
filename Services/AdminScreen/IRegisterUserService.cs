@@ -6,5 +6,7 @@ namespace ISP2.Services.AdminScreen
     public interface IRegisterUserService
     {
         Task RegisterClientAsync(RegisterUserRequest request);
+        Task<bool> DeleteUserByLoginAsync(string login);
+
     }
 }
