@@ -1,0 +1,26 @@
+# build output folders
+bin/
+obj/
+
+# user-specific files
+*.user
+*.suo
+
+# build results
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Visual Studio files
+.vscode/
+.vs/
+*.sln.docstates
+
+# temporary files
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
