@@ -2,7 +2,7 @@
   {
     "ContainingType": "ConsultantController",
     "Method": "SearchClients",
-    "RelativePath": "api/Consultant/search-clients",
+    "RelativePath": "api/Consultant/search-users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

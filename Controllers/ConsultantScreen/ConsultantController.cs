@@ -13,10 +13,10 @@ public class ConsultantController : ControllerBase
         _consultantRepo = consultantRepo;
     }
 
-    [HttpGet("search-clients")]
+    [HttpGet("search-users")]
     public async Task<IActionResult> SearchClients([FromQuery] string? FullName)
     {
-        var results = await _consultantRepo.SearchClientsAsync(FullName);
+        var results = await _consultantRepo.SearchUsersAsync(FullName);
         return Ok(results);
     }
 }

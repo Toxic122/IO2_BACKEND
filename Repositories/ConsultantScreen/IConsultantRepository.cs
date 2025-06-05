@@ -5,6 +5,6 @@ namespace ISP2.Repositories.ConsultantScreen
 {
     public interface IConsultantRepository
     {
-        Task<List<Client>> SearchClientsAsync(string? fullName);
+        Task<List<UserSearchRequest>> SearchUsersAsync(string? query);
     }
 }

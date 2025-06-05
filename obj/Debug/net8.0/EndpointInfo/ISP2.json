@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Consultant/search-clients": {
+    "/api/Consultant/search-users": {
       "get": {
         "tags": [
           "Consultant"
@@ -168,7 +168,8 @@
             "nullable": true
           },
           "wiek": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
           "idUsluga": {

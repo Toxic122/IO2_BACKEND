@@ -13,6 +13,7 @@ namespace ISP2.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Usluga> Uslugi { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<UserRole> UserRole{ get; set; }
@@ -31,6 +32,14 @@ namespace ISP2.Data
                 .WithMany(tt => tt.Klienci)
                 .HasForeignKey(t => t.IdRola)
                 .IsRequired(false);
+
+            //Client -> Usluga
+            modelBuilder.Entity<Client>()
+                .HasOne(c => c.Usluga)
+                .WithMany()
+                .HasForeignKey(c => c.idUsluga)
+                .IsRequired(false);
+
 
             //Employee -> Rola
             modelBuilder.Entity<Employee>()
