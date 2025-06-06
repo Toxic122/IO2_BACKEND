@@ -26,6 +26,72 @@
         }
       }
     },
+    "/api/Faktura/generate": {
+      "post": {
+        "tags": [
+          "Faktura"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FakturaCreateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FakturaCreateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FakturaCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Faktura/get-Invoice/{id}": {
+      "get": {
+        "tags": [
+          "Faktura"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Faktura/Invoiceslist": {
+      "get": {
+        "tags": [
+          "Faktura"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Login": {
       "post": {
         "tags": [
@@ -148,6 +214,32 @@
   },
   "components": {
     "schemas": {
+      "FakturaCreateRequest": {
+        "type": "object",
+        "properties": {
+          "imie": {
+            "type": "string",
+            "nullable": true
+          },
+          "nazwisko": {
+            "type": "string",
+            "nullable": true
+          },
+          "pesel": {
+            "type": "string",
+            "nullable": true
+          },
+          "kwota": {
+            "type": "number",
+            "format": "double"
+          },
+          "pracownikLogin": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequest": {
         "type": "object",
         "properties": {
@@ -202,6 +294,10 @@
           "idRola": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "pesel": {
+            "type": "string",
             "nullable": true
           }
         },

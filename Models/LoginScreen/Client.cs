@@ -40,5 +40,9 @@ namespace ISP2.Models.LoginScreen
         [Column("idUsluga")]
         public int? idUsluga { get; set; }
         public Usluga? Usluga { get; set; }
+
+        [Column("Pesel")]
+        public string? Pesel { get; set; }
+
     }
 }

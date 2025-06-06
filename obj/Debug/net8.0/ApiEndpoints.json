@@ -16,6 +16,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ISP2.Controllers.InvoiceScreen.FakturaController",
+    "Method": "Generate",
+    "RelativePath": "api/Faktura/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ISP2.Models.InvoiceScreen.FakturaCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISP2.Controllers.InvoiceScreen.FakturaController",
+    "Method": "GetFakturaPdf",
+    "RelativePath": "api/Faktura/get-Invoice/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISP2.Controllers.InvoiceScreen.FakturaController",
+    "Method": "GetFakturyList",
+    "RelativePath": "api/Faktura/Invoiceslist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ISP2.Controllers.LoginScreen.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login",

@@ -11,5 +11,6 @@ public class RegisterUserRequest
     public int? Wiek { get; set; }
     public int? IdUsluga { get; set; }
     public int? idRola { get; set; } 
+    public string Pesel { get; set; }
 }
 }

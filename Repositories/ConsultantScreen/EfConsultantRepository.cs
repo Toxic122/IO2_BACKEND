@@ -29,6 +29,7 @@ namespace ISP2.Repositories.ConsultantScreen
              Telefon = k.Telefon,
              NazwaUslugi = k.Usluga != null ? k.Usluga.NazwaUslugi : null,
              Rola = k.Rola != null ? k.Rola.Rola : null,
+             Pesel = k.Pesel,
              Typ = "Klient"
 
          })
@@ -47,6 +48,7 @@ namespace ISP2.Repositories.ConsultantScreen
                     Telefon = p.Telefon,
                     NazwaUslugi = null,
                     Rola = p.Rola != null ? p.Rola.Rola : null,
+                    Pesel = p.Pesel,
                     Typ = "Pracownik"
                 })
                 .ToListAsync();

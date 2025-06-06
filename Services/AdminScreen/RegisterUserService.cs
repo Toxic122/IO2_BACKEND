@@ -38,7 +38,8 @@ namespace ISP2.Services.AdminScreen
                     Telefon = request.Telefon,
                     Email= request.Email,
                     idUsluga = request.IdUsluga,
-                    IdRola = request.idRola
+                    IdRola = request.idRola,
+                    Pesel = request.Pesel
                 };
 
                 await _userRepo.AddClientAsync(client);
@@ -54,7 +55,8 @@ namespace ISP2.Services.AdminScreen
                     Wiek = request.Wiek,
                     Telefon = request.Telefon,
                     Email = request.Email,
-                    IdRola = request.idRola
+                    IdRola = request.idRola,
+                    Pesel = request.Pesel
                 };
 
                 await _userRepo.AddEmployeeAsync(employee);
