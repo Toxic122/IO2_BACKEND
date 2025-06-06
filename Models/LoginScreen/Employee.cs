@@ -36,5 +36,8 @@ namespace ISP2.Models.LoginScreen
         public int? IdRola { get; set; }
 
         public UserRole? Rola { get; set; }
+
+        [Column("Pesel")]
+        public string? Pesel { get; set; }
     }
 }

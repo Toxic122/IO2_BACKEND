@@ -11,5 +11,6 @@
         public string? NazwaUslugi { get; set; }
         public string? Rola { get; set; }
         public string Typ { get; set; }
+        public string? Pesel { get; set; }
     }
 }
