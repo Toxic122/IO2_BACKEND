@@ -26,6 +26,18 @@
         }
       }
     },
+    "/api/Consultant/all-users": {
+      "get": {
+        "tags": [
+          "Consultant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Faktura/generate": {
       "post": {
         "tags": [

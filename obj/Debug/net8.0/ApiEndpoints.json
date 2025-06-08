@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "ConsultantController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Consultant/all-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsultantController",
     "Method": "SearchClients",
     "RelativePath": "api/Consultant/search-users",
     "HttpMethod": "GET",
