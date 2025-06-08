@@ -19,4 +19,13 @@ public class ConsultantController : ControllerBase
         var results = await _consultantRepo.SearchUsersAsync(FullName);
         return Ok(results);
     }
+
+    [HttpGet("all-users")]
+    public async Task<IActionResult> GetAllUsers()
+    {
+        var users = await _consultantRepo.GetAllUsersAsync();
+        return Ok(users);
+    }
+
+
 }
